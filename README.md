@@ -131,3 +131,5 @@ try
 except <exception class> as <name>:
 	<except suite>
 ```
+
+###### [面向对象(OOP)](https://www.bilibili.com/video/BV1ex411x7Em?spm_id_from=333.788.videopod.episodes&vd_source=82d188e70a66018d5a366d01b4858dc1&p=361)
