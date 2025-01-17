@@ -4,14 +4,17 @@ def demo():
 
 
 class Person:
+    def __init__(self,new_name="无名"):#通过默认参数从而使得部分参数可选
+        self.name = new_name  # 用__init__来初始化类的属性
 
     def eat(self):
-        print()
+        print("%s喜欢吃东西" % self.name)
 
 
 print(dir(demo()))
 print(demo.__doc__)  # 输出了demo声明下一行的内容
-xiaoming = Person()
+xiaoming = Person("小明")
 xiaoming2 = xiaoming  # 此时两个小明指向同一个对象(地址引用
-
-xiaohong = Person
+# xiaoming.name = "xiaoming"
+xiaoming.eat()
+xiaohong=Person()
