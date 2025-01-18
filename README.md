@@ -4,9 +4,25 @@
 
 [参考课程:CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)
 
-```python
-assert <bool>#若为假则报错,
-```
+##### 文件管理files
+
+ [files_manage.py](files_manage.py) 
+
+1.打开open(r只读,w只写,w+读写,a在末尾追加
+2.读写
+3.关闭(释放内存
+
+W+文件不存在会新建,r+文件不存在会报错
+
+###### [double_file.py](double_file.py) 
+
+通过读写文件实现文件复制
+
+# todo 16-文件夹操作函数之创建和删除
+
+可以在度娘的最近访问里面找到
+
+
 
 ###### [高阶函数](https://zhida.zhihu.com/search?content_id=251075606&content_type=Article&match_order=1&q=高阶函数&zhida_source=entity)
 
