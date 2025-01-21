@@ -18,7 +18,15 @@ W+文件不存在会新建,r+文件不存在会报错
 
 通过读写文件实现文件复制
 
-# todo 16-文件夹操作函数之创建和删除
+###### 通过os模块实现对文件和文件夹的操作
+
+ [os_operation.py](os_operation.py) 
+
+用os包批量重命名123文件夹中的所有文件名 [change_123_name.py](change_123_name.py) 
+
+
+
+# todo 
 
 可以在度娘的最近访问里面找到
 
@@ -181,4 +189,5 @@ except <exception class> as <name>:
 - `__new__` 负责创建对象。它是一个静态方法，并且必须返回一个实例（返回的实例可以是该类的实例，也可以是其他任何对象的实例）。
 - `__init__` 负责初始化对象。只能返回 None 
 
-[todo](https://www.bilibili.com/video/BV1ex411x7Em?spm_id_from=333.788.videopod.episodes&vd_source=82d188e70a66018d5a366d01b4858dc1&p=374)
+[todo](20-了解面向对象)
+
