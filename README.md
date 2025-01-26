@@ -154,7 +154,7 @@ except <exception class> as <name>:
 	<except suite>
 ```
 
-###### [面向对象(OOP)](https://www.bilibili.com/video/BV1ex411x7Em?spm_id_from=333.788.videopod.episodes&vd_source=5c0be6bbc38ab2461d38145392e32017&p=362)
+#### [面向对象(OOP)](https://www.bilibili.com/video/BV1ex411x7Em?spm_id_from=333.788.videopod.episodes&vd_source=5c0be6bbc38ab2461d38145392e32017&p=362)
 
 2)面向对象一一谁来做？
 相比较函数，面向对象是**更大的封装**，根据**职责**在一个对象中封装多个方法
@@ -189,13 +189,13 @@ except <exception class> as <name>:
 
 案例1:烤地瓜 [kaodigua.py](kaodigua.py) 
 
+##### 继承 [success.py](success.py) 
+
+继承：子类默认继承父类的所有属性和方法(允许重写方法
+
+##### 多层继承 [high_success.py](high_success.py) 
 
 
 
-
-
-
-
-
-# [todo](12-搬家具需求和步骤分析)
+# [todo](27-super方法写法)
 
