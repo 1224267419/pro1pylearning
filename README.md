@@ -195,7 +195,30 @@ except <exception class> as <name>:
 
 ##### 多层继承 [high_success.py](high_success.py) 
 
+super():不用上述的``__init__``初始化即可调用父类的方法 
 
+```python
+#写法1: 下面两行为super带参数的和上式等价,可以调用任一层级的父类
+# super(School, self).__init__()
+# super(School, self).make_program()
+# 写法2:仅调用上一级的父类方法
+super().__init__()
+super().make_program()
+```
 
-# [todo](27-super方法写法)
+##### 权限
+
+私有private:方法和属性不继承给子类
+
+设置私有权限的方法：在属性名和方法名前面加上两个下划线
+
+##### 多态
+
+通过调用不同子类对象的相同父类方法,从而产生不同执行结果
+
+定义父类，并提供公共方法
+定义子类，并重写父类方法
+传递子类对象给调用者，可以看到不同子类执行效果不同
+
+# [todo](02-体验多态思路分析)
 

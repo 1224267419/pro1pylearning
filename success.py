@@ -14,10 +14,15 @@ class Son(Father):  # 子类
 class Master:
     def __init__(self):
         self.kongfu = "古法编程"
+        self.__money = 100000
 
     def make_program(self):
         print(f'运用{self.kongfu}写代码')
 
+    def getMoney(self):
+        return self.__money
+    def set_money(self,a):
+        self.__money=a
 
 class School:
     def __init__(self):
@@ -29,6 +34,7 @@ class School:
 
 class Student(Master, School):  # 多继承优先继承最左边的类的属性和方法
     def __init__(self):
+        super().__init__()
         self.kongfu = "自己编程"
 
     def make_program(self):
@@ -48,8 +54,12 @@ class Student(Master, School):  # 多继承优先继承最左边的类的属性�
         School.make_program(self)
         Master.__init__(self)
         Master.make_program(self)
-
-    def make_program_old_2(self):
+        # 写法1: 下面两行为super带参数的和上式等价
+        # super(School, self).__init__()
+        # super(School, self).make_program()
+        # 写法2:仅调用上一级的父类方法
+        super().__init__()
+        super().make_program()
 
 
 class Sun(Student):
@@ -71,3 +81,7 @@ if __name__ == '__main__':
     sun.make_program()
     sun.make_program_school()
     sun.make_program_master()
+    # student.__showMoney()#函数不存在
+    print(student.getMoney())#通过非私有的方法访问私有属性
+    student.set_money(100)
+    print(student.getMoney())#成功修改私有属性
